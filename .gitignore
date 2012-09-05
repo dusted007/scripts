@@ -1,4 +1,6 @@
 
+*.bbprojectsettings
+
 .DS_Store
 
 script.bbprojectd/Scratchpad.txt
