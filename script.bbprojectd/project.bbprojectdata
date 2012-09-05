@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HierarchyData</key>
+	<array>
+		<string>8167014E-C4B1-433B-AA9A-E259CCB1C7A4</string>
+	</array>
+	<key>ProjectItems</key>
+	<dict>
+		<key>8167014E-C4B1-433B-AA9A-E259CCB1C7A4</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va6ADAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAqAIAAAUAAAABAQAAVXNlcnMA
+				AAAHAAAAAQEAAHZpbmNlbnQACQAAAAEBAABXb3Jrc3Bh
+				Y2UAAAAJAAAAAQEAAERFVi1DVEFORwAAAAgAAAABAQAA
+				UHJvamVjdHMHAAAAAQEAAHNjcmlwdHMAGAAAAAEGAAAE
+				AAAAFAAAACQAAAA4AAAATAAAAFwAAAAIAAAABAMAAFa5
+				AAAAAAAACAAAAAQDAAB9awoAAAAAAAgAAAAEAwAA7qIn
+				AAAAAAAIAAAABAMAAPGiJwAAAAAACAAAAAQDAAAUoycA
+				AAAAAAgAAAAEAwAAYvhWAwAAAAAYAAAAAQYAAIwAAACc
+				AAAArAAAALwAAADMAAAA3AAAAAgAAAAABAAAQbXZU78A
+				AAAYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAA
+				AAQAAAADAwAABAAAAAQAAAADAwAA9gEAAAgAAAABAQAA
+				Q29tcHV0ZXIIAAAABAMAAAAgwQwcAAAACAAAAAAEAABB
+				tPLmvgAAACQAAAABAQAANDI1MjQyODgtRjEwNy0zRUMw
+				LUFGNzMtMEQ4OTNCOUREQkEwGAAAAAECAACBAAAAAQAI
+				AO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAA
+				AQUAALsAAAABAgAAZTZmNjE1OWI5YWJkOGY3MjRkM2U4
+				ZGUxMWNjZjYzMDAxOGQwNTQ0YzswMDAwMDAwMDswMDAw
+				MDAwMDAwMDAwMDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJv
+				eC5yZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAxOzAw
+				MDAwMDAwMDM1NmY4NjI7L3VzZXJzL3ZpbmNlbnQvd29y
+				a3NwYWNlL2Rldi1jdGFuZy9wcm9qZWN0cy9zY3JpcHRz
+				AADAAAAA/v///wEAAAAAAAAADwAAAAQQAABsAAAAAAAA
+				AAUQAADsAAAAAAAAABAQAAAcAQAAAAAAAEAQAAAMAQAA
+				AAAAAAIgAADQAQAAAAAAABAgAABUAQAAAAAAABEgAACE
+				AQAAAAAAABIgAABkAQAAAAAAABMgAAB0AQAAAAAAACAg
+				AACwAQAAAAAAADAgAADcAQAAAAAAAAHAAAA8AQAAAAAA
+				ABHAAAAUAAAAAAAAABLAAABIAQAAAAAAAIDwAADkAQAA
+				AAAAAA==
+				</data>
+				<key>FileURL</key>
+				<string>file://localhost/Users/vincent/Workspace/DEV-CTANG/Projects/scripts/</string>
+				<key>RelativePath</key>
+				<string>./</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>scripts</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
+		</dict>
+	</dict>
+	<key>com.barebones.DocumentFormatVersion</key>
+	<integer>5</integer>
+	<key>com.barebones.DocumentType</key>
+	<string>Project</string>
+</dict>
+</plist>
