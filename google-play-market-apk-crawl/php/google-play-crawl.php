@@ -1,8 +1,8 @@
 #!/usr/bin/php
 <?php
 define('GOOGLE_EMAIL','tqp860618@gmail.com');
-define('GOOGLE_PASSWD','go8SML6wxb');
-define('ANDROID_DEVICEID','3ACAB901816AF0EC');
+define('GOOGLE_PASSWD','xxxxx');
+define('ANDROID_DEVICEID','xxx');
 
 if(!GOOGLE_EMAIL||!GOOGLE_PASSWD||!ANDROID_DEVICEID){
 	echo('pls set the email,password,device_id with the script'.PHP_EOL);

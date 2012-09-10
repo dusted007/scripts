@@ -2,8 +2,8 @@
 
 
 var email = 'tqp860618@gmail.com';
-var password = 'go8SML6wxb';
-var device_id = '3ACAB901816AF0EC';
+var password = 'xxx';
+var device_id = 'xxx';
 
 if(!email||!password||!device_id){
 	console.log('pls set the email,password,device_id with the script');
