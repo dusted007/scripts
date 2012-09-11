@@ -1,8 +1,8 @@
 #!/usr/bin/php
 <?php
 define('GOOGLE_EMAIL','tqp860618@gmail.com');
-define('GOOGLE_PASSWD','xxxxx');
-define('ANDROID_DEVICEID','xxx');
+define('GOOGLE_PASSWD','go8SML6wxb');
+define('ANDROID_DEVICEID','3ACAB901816AF0EC');
 
 if(!GOOGLE_EMAIL||!GOOGLE_PASSWD||!ANDROID_DEVICEID){
 	echo('pls set the email,password,device_id with the script'.PHP_EOL);
@@ -10,7 +10,7 @@ if(!GOOGLE_EMAIL||!GOOGLE_PASSWD||!ANDROID_DEVICEID){
 }
 
 
-define('ANDROID_USERID',GOOGLE_EMAIL);
+define('ANDROID_USERID','00000000000000000000');
 define('ANDROID_REALID',ANDROID_DEVICEID);
 include("./libs/proto/protocolbuffers.inc.php");
 include("./libs/proto/market.proto.php");
@@ -38,6 +38,7 @@ foreach ($groups as $rg) {
 		$fp = fopen (dirname(__FILE__) . '/' . $app->getPackageName() . '.apk', 'w+');//This is the file where we save the information
 		$url='http://android.clients.google.com/market/download/Download?userId='.ANDROID_USERID.'&deviceId='.ANDROID_REALID.'&assetId='.$app->getId();
 		echo $url;
+		
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_TIMEOUT, 50);
 		curl_setopt($ch, CURLOPT_FILE, $fp); //output to file

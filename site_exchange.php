@@ -26,6 +26,7 @@
   *
 **/
 $args=parse_args($argv);
+
 //print_r($args);
 //parse the ini file
 $conf_ini_file_path=$args['conf_ini_file_path'];

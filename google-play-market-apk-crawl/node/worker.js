@@ -17,7 +17,7 @@ if(process.argv.length>=3){
 	}
 }
 else{
-	console.log('google-play-crawl.js'+" [app_id]\n"+'google-play-crawl.js'+" com.google.android.gm");
+	console.log('google-play-crawl'+" [app_id]\n"+'google-play-crawl'+" com.google.android.gm");
 	process.exit(1);
 }
 
@@ -175,7 +175,7 @@ var MarketSession = {
 		return base64.encode(a, !1, !0)
 	},
 	
-	requestAsset:function(f) {
+	requestAsset:function(f,app_id) {
 		params={'version':2,'request':f};
 		Utils.postData('android.clients.google.com',443,'/market/api/ApiRequest',params,
 		function(res){
@@ -193,9 +193,16 @@ var MarketSession = {
 				  if (!err) {
 					  //console.log(buffer);
 					  buffer=Utils.toArrayBuffer(buffer);
+					  cookie='';
+					  link='';
 					  
 					  for (var a = [], b = "", c, e = new Uint8Array(buffer), d = 0; d < e.byteLength; d++) a.push(e[d]), c = e[d], b = 32 > c || 122 < c ? b + "~" : b + String.fromCharCode(c);
-					  (a = /(https?:\/\/[^:]+)/gi.exec(b)) ? (c = a[1], (a = /MarketDA.*?(\d+)/gi.exec(b)) ? (cookieValue = a[1], console.log(c + "#" + cookieValue)) : (console.log("COOKIE: " + b), console.log("ERROR1: Cannot download this app!"))) : (console.log("HTTP: " + b), console.log("ERROR2: Cannot download this app!"))
+					  (a = /(https?:\/\/[^:]+)/gi.exec(b)) ? (c = a[1], (a = /MarketDA.*?(\d+)/gi.exec(b)) ? (cookieValue = a[1], cookie=cookieValue,link=c) : (console.log("COOKIE: " + b), console.log("ERROR1: Cannot download this app!"))) : (console.log("HTTP: " + b), console.log("ERROR2: Cannot download this app!"))
+					  if(cookie&&link){
+						  curl_script="curl --output "+app_id+".apk --location --user-agent 'Android-Market/2' --cookie MarketDA="+cookie+" "+link+"";
+						  console.log(curl_script);
+						  
+					  }
 				  }
 				});
 			});
@@ -226,7 +233,7 @@ var MarketSession = {
 		//China
 		//China Mobile":"46000
 		//console.log(b);
-		this.requestAsset(require_string);
+		this.requestAsset(require_string,app_id);
 		
 	},
 	tryDownload:function(app_ids){
